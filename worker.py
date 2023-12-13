@@ -33,6 +33,14 @@ def add():
     ret = addWorker(token,request.form['num'])
     return ret
 
+@app.route("/delete",methods=['GET','POST'])
+def delete():
+  if request.method=='GET':
+    return "Use post to add" 
+  else:
+    token=get_api_key()
+    ret = addWorker(token,request.form['num'])
+    return ret
 
 def addWorker(token, num):
     with open('payload.json') as p:
@@ -48,7 +56,15 @@ def addWorker(token, num):
       print(resp.content)
       return "Error\n"+resp.content.decode('utf-8') + '\n\n\n'+data
 
-
+def deleteWorker(token, num):
+    url='https://www.googleapis.com/compute/v1/projects/martin-cc/zones/europe-west1-b/instances/slave'+str(num)
+    headers={"Authorization": "Bearer "+token}
+    resp=requests.delete(url,headers=headers)
+    if resp.status_code==200:     
+      return "Done"
+    else:
+      print(resp.content)
+      return "Error\n"+resp.content.decode('utf-8') + '\n\n\n'+data
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',port='8080')
