@@ -1,3 +1,4 @@
 # spark-workers
 
-# TESTING123
+# Cloud Computing Lab 6: 
+- Add and Delete Spark Workers (VMs on Google Cloud) 
