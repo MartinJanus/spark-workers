@@ -39,7 +39,7 @@ def delete():
     return "Use post to add" 
   else:
     token=get_api_key()
-    ret = addWorker(token,request.form['num'])
+    ret = deleteWorker(token,request.form['num'])
     return ret
 
 def addWorker(token, num):
