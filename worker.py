@@ -57,7 +57,7 @@ def addWorker(token, num):
       return "Error\n"+resp.content.decode('utf-8') + '\n\n\n'+data
 
 def deleteWorker(token, num):
-    url='https://www.googleapis.com/compute/v1/projects/martin-cc/zones/europe-west1-b/instances/slave'+str(num)
+    url='https://www.googleapis.com/compute/v1/projects/cc-martin/zones/europe-west1-b/instances/slave'+str(num)
     headers={"Authorization": "Bearer "+token}
     resp=requests.delete(url,headers=headers)
     if resp.status_code==200:     
