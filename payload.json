@@ -13,7 +13,7 @@
       "diskEncyptionKey": {},
       "initializeParams": {
         "diskSizeGb": "10",
-        "diskType": "projects/martin-cc/zones/europe-west1-b/diskTypes/pd-balanced",
+        "diskType": "projects/cc-martin/zones/europe-west1-b/diskTypes/pd-balanced",
         "labels": {},
         "sourceImage": "projects/ubuntu-os-cloud/global/images/ubuntu-2204-jammny-v20231201"
       },
@@ -30,7 +30,7 @@
   "labels": {
     "goog-ec-src": "vm_add-rest"
   },
-  "machineType": "projects/martin-cc/zones/europe-west1-b/machineTypes/e2-medium",
+  "machineType": "projects/cc-martin/zones/europe-west1-b/machineTypes/e2-medium",
   "metadata": {
     "items": [
       {
