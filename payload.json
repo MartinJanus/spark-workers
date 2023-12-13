@@ -10,11 +10,12 @@
       "autoDelete": true,
       "boot": true,
       "deviceName": "slave1",
+      "diskEncyptionKey": {},
       "initializeParams": {
         "diskSizeGb": "10",
-        "diskType": "projects/spark-371009/zones/us-west4-b/diskTypes/pd-balanced",
+        "diskType": "projects/martin-cc/zones/europe-west1-b/diskTypes/pd-balanced",
         "labels": {},
-        "sourceImage": "projects/debian-cloud/global/images/debian-11-bullseye-v20221102"
+        "sourceImage": "projects/ubuntu-os-cloud/global/images/ubuntu-2204-jammny-v20231201"
       },
       "mode": "READ_WRITE",
       "type": "PERSISTENT"
@@ -24,9 +25,10 @@
     "enableDisplay": false
   },
   "guestAccelerators": [],
+  "instanceEncryptionKey": {},
   "keyRevocationActionType": "STOP",
   "labels": {},
-  "machineType": "projects/spark-371009/zones/europe-west1-b/machineTypes/e2-medium",
+  "machineType": "projects/martin-cc/zones/europe-west1-b/machineTypes/e2-medium",
   "metadata": {
     "items": [
       {
@@ -45,7 +47,7 @@
         }
       ],
       "stackType": "IPV4_ONLY",
-      "subnetwork": "projects/spark-371009/regions/europe-west1/subnetworks/default"
+      "subnetwork": "projects/cc-martin/regions/europe-west1/subnetworks/default"
     }
   ],
   "reservationAffinity": {
@@ -59,7 +61,7 @@
   },
   "serviceAccounts": [
     {
-      "email": "569439294570-compute@developer.gserviceaccount.com",
+      "email": "297941420937-compute@developer.gserviceaccount.com",
       "scopes": [
         "https://www.googleapis.com/auth/devstorage.read_only",
         "https://www.googleapis.com/auth/logging.write",
@@ -78,5 +80,5 @@
   "tags": {
     "items": []
   },
-  "zone": "projects/spark-371009/zones/europe-west1-b"
+  "zone": "projects/cc-martin/zones/europe-west1-b"
 }
