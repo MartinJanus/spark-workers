@@ -15,7 +15,7 @@
         "diskSizeGb": "10",
         "diskType": "projects/cc-martin/zones/europe-west1-b/diskTypes/pd-balanced",
         "labels": {},
-        "sourceImage": "projects/ubuntu-os-cloud/global/images/ubuntu-2204-jammny-v20231201"
+        "sourceImage": "projects/ubuntu-os-cloud/global/images/ubuntu-2204-jammy-v20231201"
       },
       "mode": "READ_WRITE",
       "type": "PERSISTENT"
