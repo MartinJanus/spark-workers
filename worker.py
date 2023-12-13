@@ -36,7 +36,7 @@ def add():
 @app.route("/delete",methods=['GET','POST'])
 def delete():
   if request.method=='GET':
-    return "Use post to add" 
+    return "Use post to delete" 
   else:
     token=get_api_key()
     ret = deleteWorker(token,request.form['num'])
